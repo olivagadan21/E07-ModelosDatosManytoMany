@@ -24,4 +24,6 @@ public class AddedToService extends BaseService<AddedTo, AddedToPk, AddedToRepos
 
     }
 
+    public void addSongToPlaylist(Song song) {
+    }
 }

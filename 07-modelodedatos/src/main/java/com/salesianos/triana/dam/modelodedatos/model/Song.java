@@ -25,4 +25,10 @@ public class Song implements Serializable {
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Playlist> playlists = new ArrayList<>();
 
+    public void addToSong(List<Song> s, Artist a) {
+        for (int i = 0; i < s.size(); i++) {
+            setArtista(a);
+        }
+    }
+
 }

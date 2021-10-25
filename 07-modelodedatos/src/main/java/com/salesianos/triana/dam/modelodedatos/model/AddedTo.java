@@ -3,6 +3,7 @@ package com.salesianos.triana.dam.modelodedatos.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor @AllArgsConstructor @Builder
@@ -26,36 +27,4 @@ public class AddedTo {
     private String datetime;
     private int order;
 
-    //HELPERS
-/*
-    public void addToAlumno(Alumno a) {
-        alumno = a;
-        a.getNotas().add(this);
-    }
-
-    public void removeFromAlumno(Alumno a) {
-        a.getNotas().remove(this);
-        alumno = null;
-    }
-
-    public void addToAsignatura(Asignatura a) {
-        asignatura = a;
-        a.getNotas().add(this);
-    }
-
-    public void removeFromAsignatura(Asignatura a) {
-        a.getNotas().remove(this);
-        asignatura = null;
-    }
-
-    public void addAsignaturaAlumno(Asignatura asignatura, Alumno alumno) {
-        addToAlumno(alumno);
-        addToAsignatura(asignatura);
-    }
-
-    public void removeAsignaturaAlumno(Asignatura asignatura, Alumno alumno) {
-        removeFromAlumno(alumno);
-        removeFromAsignatura(asignatura);
-    }
-*/
 }

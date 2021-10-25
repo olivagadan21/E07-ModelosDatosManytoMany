@@ -7,6 +7,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.apache.coyote.http11.Constants.a;
+
 @Entity
 @NoArgsConstructor
 @Getter @Setter
