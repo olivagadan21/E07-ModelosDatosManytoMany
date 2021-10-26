@@ -3,6 +3,8 @@ package com.salesianos.triana.dam.modelodedatos.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -24,7 +26,7 @@ public class AddedTo {
     @JoinColumn(name="playlist_id")
     private Playlist playlist;
 
-    private String datetime;
+    private LocalDateTime datetime;
     private int order;
 
 }

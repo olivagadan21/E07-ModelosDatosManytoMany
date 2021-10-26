@@ -22,8 +22,8 @@ public class Song implements Serializable {
     @ManyToOne
     private Artist artista;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    private List<Playlist> playlists = new ArrayList<>();
+    @OneToMany( mappedBy = "song", fetch = FetchType.EAGER)
+    private List<AddedTo> addedToList = new ArrayList<>();
 
     public void addToSong(List<Song> s, Artist a) {
         for (int i = 0; i < s.size(); i++) {

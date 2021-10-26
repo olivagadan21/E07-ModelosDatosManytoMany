@@ -12,7 +12,7 @@ public class AddedToService extends BaseService<AddedTo, AddedToPk, AddedToRepos
 
     public Song addSongToPlaylist(Song s, Playlist p) {
 
-        p.getSongs().forEach(a -> {
+        p.getAddedToList().forEach(a -> {
             AddedTo added = AddedTo.builder()
                     .playlist(p)
                     .song(s)

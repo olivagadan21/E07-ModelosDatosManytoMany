@@ -23,7 +23,7 @@ public class Playlist implements Serializable {
     private String description;
 
     @Builder.Default
-    @ManyToMany(mappedBy = "playlists",fetch = FetchType.EAGER)
-    private List<Song> songs = new ArrayList<>();
+    @OneToMany( mappedBy = "playlist", fetch = FetchType.EAGER)
+    private List<AddedTo> addedToList = new ArrayList<>();
 
 }
